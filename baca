@@ -1,0 +1,4 @@
+aplikasi sistem informasi perpustakaan berbasis web
+dibangun dengan framework Laravel v.5.2 dan twitter bootstrap
+url login admin http://localhost:8000/login
+username :donipr95@gmail.com dan password : superuser 
