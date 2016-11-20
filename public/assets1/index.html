@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Spring - Coming Soon page Template</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300,100' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+<!--[if lt IE 9]>
+
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+<div class="header">
+  <div class="bg-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="logo pull-left col-md-6 col-sm-6 col-xs-12">
+            <h1>Spring<span>.</span></h1>
+          </div>
+          <div class="social col-md-6 col-sm-6 col-xs-12">
+            <ul class="pull-right">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="main-title text-center">
+            <p class="sub-title">Hello, We're</p>
+            <h2>Coming Soon</h2>
+            <div id="countdown" data-wow-delay=".3s" data-date="Dec 26, 2016 06:00:00"></div>
+            <a href="#footer" class="subscribe-tag page-scroll">Subscribe</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="about-text">
+          <p>Let's Know</p>
+          <h3>About Us</h3>
+        </div>
+        <div class="about-content">
+          <p>Vestibulum nec vestibulum erat, id luctus nisl. Quisque tristique pulvinar elementum. Proin venenatis libero nisl, quis eleifend nunc mattis vitae. Ut ut augue ipsum. Fusce felis tortor, condimentum nec interdum quis, efficitur ac sapien. In a lorem dictum, mattis turpis in, rutrum metus. Sed vel erat sit amet mi finibus accumsan eget ut leo. Phasellus vitae magna ut nulla tempor commodo eget nec enim. Aliquam ornare nisi ac accumsan mollis. Curabitur non nibh in sem congue bibendum. Mauris at tempus arcu. In metus quam, pellentesque in diam non, consectetur lobortis sapien. Duis sagittis felis in diam tincidunt dapibus. Donec porta quis mi eget gravida. Quisque purus neque, lobortis at mollis congue, tempus vitae lorem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-title text-center">
+          <p>Are you ready to</p>
+          <h3>Sign up for our newsletter to get notified!</h3>
+        </div>
+        <div class="subscribeform">
+          <form class="subscribe_form" action="#" method="post">
+            <input required value="" placeholder="Enter your email..." class="email" id="email" name="email" type="email">
+            <input class="subscribe" name="email" value="Subscribe!" type="submit">
+          </form>
+        </div>
+        <div class="social text-center">
+          <ul>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-12 text-center footer-line">
+        <p>2016 &copy; Spring | Designed By <a href="http://themesiter.com">Themesiter</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/jquery.countdown.min.js"></script> 
+<script type="text/javascript">
+if ($('#countdown').length) { 
+			$('#countdown').countdown({
+				render: function(data) {
+					if (data.years >= 1) {
+						var $days =	(data.years*365)+data.days;
+					} else {
+						var $days = data.days;
+					}
+				  $(this.el).html(
+					  '<div class="day">' + this.leadingZeros($days) + ' <span>Days</span></div>'+
+					  '<div class="hour">' + this.leadingZeros(data.hours, 2) + ' <span>Hours</span></div>'+
+					  '<div class="min">' + this.leadingZeros(data.min, 2) + ' <span>Minutes</span></div>'+
+					  '<div class="sec">' + this.leadingZeros(data.sec, 2) + ' <span>Seconds</span></div>'
+				  );
+				}
+			});
+		}
+
+</script>
+</body>
+</html>
